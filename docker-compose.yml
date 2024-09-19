@@ -1,0 +1,12 @@
+version: "3"
+services:
+    dummy-test:
+        image: ucbscf/dummy-test
+        container_name: dummy-test
+    watchtower:
+        image: containrrr/watchtower
+        container_name: watchtower
+        volumes:
+          - /var/run/docker.sock:/var/run/docker.sock
+          - $HOME/.docker/config.json:/config.json
+        command: dummy-test --interval 30 --debug
