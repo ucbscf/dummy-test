@@ -1,4 +1,4 @@
-name: slapd-provider image build
+name: dummy-test image build
 
 on:
   push:
