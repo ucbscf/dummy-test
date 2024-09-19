@@ -2,11 +2,9 @@ name: dummy-test image build
 
 on:
   push:
-    branches: [ "main" ]
-
-on:
+    branches: [ "master" ]
   workflow_dispatch:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   docker:
