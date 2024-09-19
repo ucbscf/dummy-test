@@ -27,4 +27,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ github.repository }}:${{ steps.short_sha.outputs.short_sha }}
+        #tags: ${{ github.repository }}:${{ steps.short_sha.outputs.short_sha }}
+        tags: ${{ github.repository }}:latest
